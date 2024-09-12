@@ -1,0 +1,1383 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.home{
+    height: 120vh;
+    width: 120w;
+    background-image: url(Images/home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 15rem 0rem 12rem;
+}
+
+.home header .navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: cursive;
+    margin-right: 5rem;
+    transition: all .3s;
+}
+
+.home header .navbar a:hover{
+    font-size: 1.7rem;
+    color: rgb(255, 149, 0);
+}
+
+.home header .logo{
+    font-size: 4rem;
+    color: rgb(255, 149, 0);
+    font-family: "Satisfy", cursive;
+}
+
+.home #breadimg{
+    position: absolute;
+    top: 8rem;
+    right: 15rem;
+    height: 53rem;
+    transform: rotate(-10deg);
+    scale: 1.15;
+    display: inline-block;
+    animation-name: homebreadimg;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes homebreadimg{
+    0%{
+        scale: 1.15;
+        transform: rotate(-10deg);
+    }
+    100%{
+        scale: 1;
+        transform: rotate(10deg);
+    }
+}
+
+.home #crossantimg{
+    position: absolute;
+    height: 9rem;
+    top: 43rem;
+    left: 38rem;
+    scale: 1.15;
+    transform: rotate(-10deg);
+    animation-name: homebreadimg;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.home .content{
+    display: inline-block;
+    margin-top: 12rem;
+    margin-left: 12rem;
+}
+
+.home .content h1{
+    font-family: "Satisfy", cursive;
+    color: white;
+    font-size: 7rem;
+    font-weight: 100;
+    width: 50rem;
+    margin-bottom: 7rem;
+    line-height: 8rem;
+    scale: 1.12;
+    animation-name: homecontenth1;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.home .content .contentfirstspan{
+    position: relative;
+    top: 1rem;
+    left: 5rem;
+}
+
+.home .content .contentsecondspan{
+    font-size: 9rem;
+    color:rgb(254, 198, 125);
+}
+
+@keyframes homecontenth1{
+    0%{
+        scale: 1.12;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.home .content button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.6rem;
+    background-color: rgb(255, 149, 0);
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 2rem 1rem rgb(255, 255, 255, .2);
+    scale: 1.12;
+    transform: translateY(3rem);
+    display: inline-block;
+    animation-name: homecontentbtn;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes homecontentbtn{
+    0%{
+        transform: translateY(3rem);
+        scale: 1.12;
+    }
+    100%{
+        transform: translateY(0rem);
+        scale: 1;
+    }
+}
+
+.home .content button:hover{
+    color: white;
+}
+
+.home footer{
+    position: absolute;
+    bottom: -8rem;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin-left: 11rem;
+}
+
+.home footer .location{
+    display: flex;
+    align-items: center;
+    margin-right: 60rem;
+}
+
+.home footer .location .locationplace{
+    margin-left: .5rem;
+    color: rgb(255, 255, 255, .7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.home footer .location i{
+    color: rgb(255, 165, 0, .7);
+    cursor: pointer;
+}
+
+.home footer .sociallinks i{
+    position: relative;
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all .5s;
+    animation-name: sociallinksanimation;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes sociallinksanimation{
+    0%{
+        bottom: 0rem;
+    }
+    100%{
+        bottom: 1rem;
+    }
+}
+
+.home footer .sociallinks i:hover{
+    animation-play-state: paused;
+    font-size: 2.8rem;
+    color: orange;
+}
+
+.firstruler{
+    position: absolute;
+    width: 0rem;
+    bottom: -15rem;
+    left: 59rem;
+    animation-name: hranimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    border-color: rgb(255, 255, 255, .4);
+}
+
+@keyframes hranimation{
+    0%{
+        width: 0rem;
+    }
+
+    100%{
+        transform: scaleX(250);
+    }
+}
+
+
+.inventory{
+    padding-top: 8rem;
+    height: 100vh;
+    width: 98.8vw;
+    background-color: rgb(25, 25, 25);
+}
+
+.inventory img{
+    height: 22rem;
+    cursor: pointer;
+    transition: all 2s;
+    scale: 1.08;
+    rotate: -10deg;
+    animation-name: inventoryimganimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes inventoryimganimation{
+    0%{
+        scale: 1.08;
+        rotate: -10deg;
+    }
+    100%{
+        scale: 1;
+        rotate: 10deg;
+    }
+}
+
+.inventory img:hover{
+    transform: rotate(180deg) scale(1.1);
+}
+
+.inventory h1{
+    padding-top: 3rem;
+    font-family: "Satisfy", cursive;
+    color: white;
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.inventory .menu{
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory .menu .firstbread{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.inventory .menu .firstbread h3{
+    font-size: 3rem;
+    font-family: "Satisfy", cursive;
+    color: rgb(255, 149, 0);
+    margin-bottom: .5rem;
+}
+
+.inventory .menu .firstbread p{
+    text-align: center;
+    width: 18rem;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 100;
+    margin-bottom: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inventory .menu .secondbread{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.inventory .menu .secondbread h3{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-family: "Satisfy", cursive;
+    color: rgb(255, 149, 0);
+}
+
+.inventory .menu .secondbread p{
+    text-align: center;
+    width: 18rem;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inventory .menu .thirdbread{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.inventory .menu .thirdbread h3{
+    font-size: 3rem;
+    font-family: "Satisfy", cursive;
+    color: rgb(255, 149, 0);
+}
+
+.inventory .menu .thirdbread p{
+    text-align: center;
+    width: 18rem;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 100;
+    margin-bottom: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inventory button{
+    margin-top: 5rem;
+    position: absolute;
+    left: 42%;
+    background-color: rgb(255, 149, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.6rem;
+    background-color: rgb(255, 149, 0);
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 5rem 1rem rgb(255, 255, 255, .2);
+}
+
+.inventory button:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+.secondruler{
+    position: absolute;
+    width: 0rem;
+    bottom: -86rem;
+    left: 59rem;
+    animation-name: hranimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    border-color: rgb(255, 255, 255, .4);
+}
+
+@keyframes hranimation{
+    0%{
+        width: 0rem;
+    }
+
+    100%{
+        transform: scaleX(250);
+    }
+}
+
+.aboutus{
+    padding: 9rem 17rem;
+    height: 100vh;
+    width: 71vw;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.aboutus .imgsection .aboutusbreadimg{
+    height: 52rem;
+    border-radius: 0rem 2rem 2rem 2rem;
+    scale: 1.1;
+    animation-name: aboutuscontentimganimation, aboutusimganimation;
+    animation-duration: 1s, 6s;
+    animation-delay: .5s, 4s;
+    animation-iteration-count: 1, 1;
+    animation-fill-mode: forwards, forwards;
+}
+
+@keyframes aboutuscontentimganimation{
+    0%{
+       scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes aboutusimganimation{
+    0%{
+        border-radius: 0rem 2rem 2rem 2rem;
+    }
+    100%{
+        border-radius: 30rem 2rem 2rem 2rem;
+    }
+}
+
+.aboutus .contentsection{
+    margin-left: 8rem;
+}
+
+.aboutus .contentsection h1{
+    font-family: "Satisfy", cursive;
+    font-weight: 300;
+    font-size: 5.5rem;
+    margin-bottom: 2rem;
+    scale: 1.12;
+    animation-name: aboutuscontentanimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutuscontentanimation{
+    0%{
+       scale: 1.12;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.aboutus .contentsection span{
+    color:rgb(254, 198, 125);
+}
+
+.aboutus .contentsection p{
+    text-align: left;
+    width: 39rem;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 100;
+    margin-bottom: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2rem;
+    scale: 1.12;
+    animation-name: aboutuscontentanimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.aboutus .contentsection button{
+    background-color: rgb(255, 149, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.6rem;
+    background-color: rgb(255, 149, 0);
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 5rem 1rem rgb(255, 255, 255, .2);
+    scale: 1.12;
+    transform: translateY(3rem);
+    transform: translateX(-1rem);
+    display: inline-block;
+    animation-name: aboutuscontentbtn;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutuscontentbtn{
+    0%{
+        transform: translateY(3rem);
+        transform: translateX(-1rem);
+        scale: 1.12;
+    }
+    100%{
+        transform: translateY(0rem);
+        scale: 1;
+    }
+}
+
+.aboutus .contentsection button:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+.aboutus .contentsection img{
+    position: absolute;
+    height: 13rem;
+    right: 20rem;
+    top: 190rem;
+    scale: 1.12;
+    rotate: -20deg;
+    animation-name: aboutuscontentsectionimganimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutuscontentsectionimganimation{
+    0%{
+       scale: 1.12;
+       rotate: -20deg;
+    }
+    100%{
+        scale: 1;
+        rotate: -10deg;
+    }
+}
+
+.thirdruler{
+    position: absolute;
+    width: 0rem;
+    bottom: -157rem;
+    left: 59rem;
+    animation-name: hranimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    border-color: rgb(255, 255, 255, .4);
+}
+
+@keyframes hranimation{
+    0%{
+        width: 0rem;
+    }
+
+    100%{
+        transform: scaleX(250);
+    }
+}
+
+.favourites{
+    padding-top: 4rem;
+    background-color: black;
+    color: white;
+    height: 135vh;
+    width: 98.8vw;
+}
+
+.favourites h1{
+    font-family: "Satisfy", cursive;
+    margin-left: 43rem;
+    font-size: 5rem;
+    font-weight: 100;
+    margin-bottom: 10rem;
+}
+
+.favourites .items{
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favourites .items .firstrow{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.favourites .items .firstrow .first{
+    height: 22rem;
+    width: 20rem;
+    background-color: rgb(25, 25, 25);
+    border-radius: 1rem;
+    transition: all .2s;
+    border: .1rem solid transparent;
+}
+
+.favourites .items .firstrow .first:hover{
+    border: .1rem solid orange;
+}
+
+.favourites .items .firstrow .first img{
+    position: relative;
+    bottom: 5rem;
+    left: 2.5rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+.favourites .items .firstrow .first h2{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 2.3rem;
+    font-family: "Satisfy", cursive;
+    color: orange;
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+.favourites .items .firstrow .first p{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+
+.favourites .items .firstrow .first .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 2.5rem;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-left: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.favourites .items .firstrow .first .price button{
+    background-color: rgba(255, 166, 0, 0.829);
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: .3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: all .3s;
+    box-shadow: 1rem 1rem 5rem 1rem rgb(255, 255, 255, .2);
+}
+
+.favourites .items .firstrow .first .price button:hover{
+    color: rgb(255, 255, 255, .7);
+}
+
+.favourites .items .firstrow .second{
+    height: 22rem;
+    width: 20rem;
+    background-color: rgb(25, 25, 25);
+    border-radius: 1rem;
+    border: .1rem solid transparent;
+    transition: all .2s;
+}
+
+.favourites .items .firstrow .second:hover{
+    border: .1rem solid orange;
+}
+
+.favourites .items .firstrow .second img{
+    position: relative;
+    bottom: 5rem;
+    left: 2.5rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+.favourites .items .firstrow .second h2{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 2.3rem;
+    font-family: "Satisfy", cursive;
+    color: orange;
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+.favourites .items .firstrow .second p{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+
+.favourites .items .firstrow .second .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 2.5rem;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-left: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.favourites .items .firstrow .second .price button{
+    background-color: rgba(255, 166, 0, 0.829);
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: .3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: all .3s;
+    box-shadow: 1rem 1rem 5rem 1rem rgb(255, 255, 255, .2);
+}
+
+.favourites .items .firstrow .second .price button:hover{
+    color: rgb(255, 255, 255, .7);
+}
+
+.favourites .items .firstrow .third{
+    height: 22rem;
+    width: 20rem;
+    background-color: rgb(25, 25, 25);
+    border-radius: 1rem;
+    transition: all .2s;
+    border: .1rem solid transparent;
+}
+
+.favourites .items .firstrow .third:hover{
+    border: .1rem solid orange;
+}
+
+.favourites .items .firstrow .third img{
+    position: relative;
+    bottom: 5rem;
+    left: 2.5rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+.favourites .items .firstrow .third h2{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 2.3rem;
+    font-family: "Satisfy", cursive;
+    color: orange;
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+
+.favourites .items .firstrow .third p{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+
+.favourites .items .firstrow .third .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 2.5rem;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-left: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.favourites .items .firstrow .third .price button{
+    background-color: rgba(255, 166, 0, 0.829);
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: .3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: all .3s;
+    box-shadow: 1rem 1rem 5rem 1rem rgb(255, 255, 255, .2);
+}
+
+.favourites .items .firstrow .third .price button:hover{
+    color: rgb(255, 255, 255, .7);
+}
+
+.favourites .items .secondrow{
+    margin-top: 8rem;
+    display: flex;
+}
+
+.favourites .items .secondrow{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.favourites .items .secondrow .fourth{
+    height: 22rem;
+    width: 20rem;
+    background-color: rgb(25, 25, 25);
+    border-radius: 1rem;
+    transition: all .2s;
+    border: .1rem solid transparent;
+}
+
+.favourites .items .secondrow .fourth:hover{
+    border: .1rem solid orange;
+}
+
+.favourites .items .secondrow .fourth img{
+    position: relative;
+    bottom: 5rem;
+    left: 2.5rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+.favourites .items .secondrow .fourth h2{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 2.3rem;
+    font-family: "Satisfy", cursive;
+    color: orange;
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+.favourites .items .secondrow .fourth p{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+
+.favourites .items .secondrow .fourth .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 2.5rem;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-left: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.favourites .items .secondrow .fourth .price button{
+    background-color: rgba(255, 166, 0, 0.829);
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: .3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: all .3s;
+    box-shadow: 1rem 1rem 5rem 1rem rgb(255, 255, 255, .2);
+}
+
+.favourites .items .secondrow .fourth .price button:hover{
+    color: rgb(255, 255, 255, .7);
+}
+
+.favourites .items .secondrow .fifth{
+    height: 22rem;
+    width: 20rem;
+    background-color: rgb(25, 25, 25);
+    border-radius: 1rem;
+    border: .1rem solid transparent;
+    transition: all .2s;
+}
+
+.favourites .items .secondrow .fifth:hover{
+    border: .1rem solid orange;
+}
+
+.favourites .items .secondrow .fifth img{
+    position: relative;
+    bottom: 5rem;
+    left: 2.5rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+.favourites .items .secondrow .fifth h2{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 2.3rem;
+    font-family: "Satisfy", cursive;
+    color: orange;
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+.favourites .items .secondrow .fifth p{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+
+.favourites .items .secondrow .fifth .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 2.5rem;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-left: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.favourites .items .secondrow .fifth .price button{
+    background-color: rgba(255, 166, 0, 0.829);
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: .3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: all .3s;
+    box-shadow: 1rem 1rem 5rem 1rem rgb(255, 255, 255, .2);
+}
+
+.favourites .items .secondrow .fifth .price button:hover{
+    color: rgb(255, 255, 255, .7);
+}
+
+.favourites .items .secondrow .sixth{
+    height: 22rem;
+    width: 20rem;
+    background-color: rgb(25, 25, 25);
+    border-radius: 1rem;
+    transition: all .2s;
+    border: .1rem solid transparent;
+}
+
+.favourites .items .secondrow .sixth:hover{
+    border: .1rem solid orange;
+}
+
+.favourites .items .secondrow .sixth img{
+    position: relative;
+    bottom: 5rem;
+    left: 2.5rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+.favourites .items .secondrow .sixth h2{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 2.3rem;
+    font-family: "Satisfy", cursive;
+    color: orange;
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+.favourites .items .secondrow .sixth p{
+    position: relative;
+    bottom: 3.5rem;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+
+.favourites .items .secondrow .sixth .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 2.5rem;
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-left: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.favourites .items .secondrow .sixth .price button{
+    background-color: rgba(255, 166, 0, 0.829);
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: .3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: all .3s;
+    box-shadow: 1rem 1rem 5rem 1rem rgb(255, 255, 255, .2);
+}
+
+.favourites .items .secondrow .sixth .price button:hover{
+    color: rgb(255, 255, 255, .7);
+}
+
+.favourites .items img{
+    scale: 1.08;
+    rotate: -10deg;
+    animation-name: inventoryimganimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inventoryimganimation{
+    0%{
+        scale: 1.08;
+        rotate: -10deg;
+    }
+    100%{
+        scale: 1;
+        rotate: 10deg;
+    }
+}
+
+.fourthruler{
+    position: absolute;
+    width: 0rem;
+    bottom: -243rem;
+    left: 59rem;
+    animation-name: hranimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    border-color: rgb(255, 255, 255, .4);
+}
+
+@keyframes hranimation{
+    0%{
+        width: 0rem;
+    }
+
+    100%{
+        transform: scaleX(250);
+    }
+}
+
+.lastpage{
+    height: 110vh;
+    width: 98.8vw;
+    color: white;
+    background-color: rgb(13, 13, 13);
+}
+
+.lastpage .location{
+    height: 60%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lastpage .location img{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    scale: 1.02;
+    opacity: .5;
+    animation-name: lastpageimganimation;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes lastpageimganimation{
+    0%{
+        scale: 1.02;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.lastpage .location .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -28rem;
+}
+
+.lastpage .location .content h1{
+    font-size: 5rem;
+    font-weight: 200;
+    font-family: "Satisfy" , cursive;
+    margin-bottom: 1.8rem;
+    color: rgb(255, 255, 255, .9);
+    scale: 1.12;
+    translate: 0rem -1rem;
+    display: inline-block;
+    animation-name: lastpagecontentanimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.lastpage .location .content p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 35rem;
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255, .8);
+    margin-bottom: 3rem;
+    scale: 1.12;
+    translate: 0rem -1rem;
+    display: inline-block;
+    animation-name: lastpagecontentanimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.lastpage .location .content button{
+    background-color: rgb(255, 149, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 4.4rem;
+    width: 13rem;
+    font-size: 1.6rem;
+    background-color: rgb(255, 149, 0);
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 5rem 1rem rgb(255, 255, 255, .4);
+    scale: 1.12;
+    translate: 0rem -1rem;
+    display: inline-block;
+    animation-name: lastpagecontentanimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.lastpage .location .content button:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+@keyframes lastpagecontentanimation{
+    0%{
+        translate: 0rem -1rem;
+        scale: 1.12;
+    }
+    100%{
+        translate: 0rem 0rem;
+        scale: 1;
+    }
+}
+
+.lastpage footer{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lastpage footer .brandinfo 
+{
+    scale: 1.12;
+    translate: 0rem -1rem;
+    animation-name: lastpagecontentanimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.lastpage footer .brandinfo h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(255, 149, 0, .9);
+    font-family: "Satisfy", cursive;
+    margin-bottom: 1rem;
+}
+
+.lastpage footer .brandinfo p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    width: 15rem;
+    color: rgb(255, 255, 255, .6);
+}
+
+.lastpage footer .address{
+    position: relative;
+    left: 23rem;
+    scale: 1.12;
+    translate: 0rem -1rem;
+    animation-name: lastpagecontentanimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.lastpage footer .address h1{
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+}
+
+.lastpage footer .place{
+    color: rgb(255, 255, 255, .7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+
+.lastpage footer .country{
+    color: rgb(255, 255, 255, .7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.lastpage footer .timing{
+    color: rgb(255, 255, 255, .7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.lastpage footer .contactme{
+    position: relative;
+    left: 10rem;
+    scale: 1.12;
+    translate: 0rem -1rem;
+    display: inline-block;
+    animation-name: lastpagecontentanimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.lastpage footer .contactme h1{
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+}
+
+.lastpage footer .contactme p{
+    color: rgb(255, 255, 255, .7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.lastpage footer .footersociallinks{
+    position: relative;
+    left: -3rem;
+    scale: 1.12;
+    translate: 0rem -1rem;
+    display: inline-block;
+    animation-name: lastpagecontentanimation;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.lastpage footer .footersociallinks h1{
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+}
+
+.lastpage footer .footersociallinks i{
+    color: rgb(255, 255, 255, .7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.lastpage footer .footersociallinks i:hover{
+    color: orange;
+}
+
+.lastpage footer img{
+    height: 8rem;
+    position: absolute;
+    scale: 1.2;
+    rotate: -10deg;
+    animation-name: lastpageimagesanimation;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+.lastpage footer #bread{
+    top: 358rem;
+    left: 28rem;
+}
+
+.lastpage footer #loaf{
+    height: 7rem;
+    top: 362rem;
+    right: 18rem;
+}
+
+@keyframes lastpageimagesanimation{
+    0%{
+        scale: 1.2;
+        rotate: -10deg;
+    }
+    100%{
+        scale: 1;
+        rotate: 0deg;
+    }
+}
+
+
+.lastpage #rights{
+    position: relative;
+    bottom: -5rem;
+    text-align: center;
+    color: rgb(255, 255, 255, .6);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+}
