@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    color: white;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .logo span{
+    color: #C06B3E;
+}
+
+.nav .logo{
+    font-size: 45px;
+    font-family: "Single Day";
+    margin-left: 70px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.nav .logo:hover{
+    cursor: pointer;
+    color: #C06B3E;
+    span{
+        color: white
+    };
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-right: 100px;
+    margin-top: 32px
+}
+
+.nav ul li{
+    margin-right: 50px;
+}
+
+.nav ul a{
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+.nav ul a:hover{
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgb(255, 255, 255, .5);
+    color: rgb(192, 107, 62, 1);
+    font-size: 15px;
+}
+
+.container{
+    position: absolute;
+    top: 32%;
+    left: 5%;
+}
+
+.container h1{
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.container p{
+    font-size: 14px;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+.container p span{
+    color: rgb(255, 174, 0, .8);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.container button{
+    height: 45px;
+    width: 130px;
+    background-color: rgb(255, 255, 255, 1);
+    color: rgb(0, 0, 0, .7);
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container button:hover{
+    height: 50px;
+    width: 140px;
+    backdrop-filter: blur(20px);
+    background-color: #C06B3E;
+    border: none;
+    outline: none;
+    color: white;
+}
